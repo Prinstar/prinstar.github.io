@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MADAAD VENTURES • Tech Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div>
+  <a class="brand" href="index.html">MADAAD VENTURES</a>
+  <div class="muted" style="font-size:11px; letter-spacing:.12em; text-transform:uppercase">
+    Premium Tech
+  </div>
+</div>
+
+
+
+      <div class="searchbar">
+        <input id="searchInput" placeholder="Search products or categories..." />
+      </div>
+      <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+  <select id="categoryFilter" class="select">
+    <option value="all">All categories</option>
+  </select>
+
+  <select id="sortBy" class="select">
+    <option value="featured">Featured</option>
+    <option value="low">Price: Low → High</option>
+    <option value="high">Price: High → Low</option>
+  </select>
+</div>
+
+      <a class="btn" href="cart.html">
+        Cart <span class="badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+  <button class="btn" id="themeToggle" type="button" aria-label="Toggle theme">
+  🌙
+</button>
+  <main class="container">
+    <h1 style="margin:18px 0 6px">Product Catalog</h1>
+    <div class="muted">Click “Add to cart” to start building your order.</div>
+    <section class="panel" style="margin-top:14px">
+  <div style="display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap">
+    <div>
+      <div style="letter-spacing:.14em; text-transform:uppercase; color:var(--muted); font-size:12px; font-weight:800">
+        Premium Tech Store
+      </div>
+      <div style="font-size:28px; font-weight:900; margin-top:6px">
+        Devices and accessories designed to feel effortless.
+      </div>
+      <div class="muted" style="margin-top:6px; max-width:60ch">
+        Curated audio, wearables, peripherals, and charging—built for modern life.
+      </div>
+    </div>
+
+    <div style="display:flex; gap:10px; align-items:center">
+      <a class="btn" href="index.html">New Arrivals</a>
+      <a class="btn primary" href="index.html">Best Sellers</a>
+    </div>
+  </div>
+</section>
+
+    <section id="productGrid" class="grid" aria-label="Product grid"></section>
+  </main>
+</body>
+</html>

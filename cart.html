@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MADAAD VENTURES • Tech Store</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div>
+  <a class="brand" href="index.html">MADAAD VENTURES</a>
+  <div class="muted" style="font-size:11px; letter-spacing:.12em; text-transform:uppercase">
+    Premium Tech
+  </div>
+</div>
+
+      <a class="btn" href="index.html">Continue shopping</a>
+      <a class="btn" href="cart.html">
+        Cart <span class="badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+
+     <button class="btn" id="themeToggle" type="button" aria-label="Toggle theme">
+  🌙
+</button>
+  <main class="container">
+    <h1 style="margin:18px 0 6px">Your Cart</h1>
+
+    <div id="emptyCart" class="panel" style="display:none; margin-top:14px">
+      <div style="font-weight:900; font-size:18px">Cart is empty</div>
+      <div class="muted" style="margin-top:6px">Go back to the catalog and add something you like.</div>
+      <div style="margin-top:12px">
+        <a class="btn primary" href="index.html">Browse products</a>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:14px">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th style="width:120px">Qty</th>
+            <th style="width:140px">Total</th>
+            <th style="width:120px"></th>
+          </tr>
+        </thead>
+        <tbody id="cartBody"></tbody>
+      </table>
+
+      <div class="total-line"><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+
+      <div class="footer-actions">
+        <a class="btn" href="index.html">Continue shopping</a>
+        <a class="btn primary" href="checkout.html">Checkout</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
